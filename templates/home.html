@@ -1,0 +1,92 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>home</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    
+        <style>
+            img{
+            background-size: cover;
+            margin-left:0em;
+            background-attachment:fixed
+            }
+            .row2{
+                background-image: url('/static/images/back.png');
+                width: 100%;
+                height: 550px;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+            .part{
+                top: 10px;
+                margin-left: 180px;
+                width: 440px;
+                height: 550px;
+                background: #151515 0% 0% no-repeat padding-box;
+                border: 1px solid #707070;
+                opacity: 0.73;
+                color: #ffffff;
+            }
+            p{
+                top: 240px;
+                left: 241px;
+                width: 460px;
+                height: 150px;
+                text-align: left;
+                padding: 1em;
+                font: Bold 35px/47px Playfair Display;
+                letter-spacing: 1.4px;
+                color:white;
+                opacity: 1;
+                font-size:30px;
+                margin-top: 1.2em;
+                font-weight: 190;
+            }
+            h4{
+                padding: 2em;
+            }
+            .a{
+               
+                left: 231px;
+                width: 130px;
+                height: 50px;
+                background: #FFFFFF 0% 0% no-repeat padding-box;
+                border: 1px solid #707070;
+                border-radius: 12px;
+                opacity: 1;
+                margin-left: 1em;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th><img src='/static/images/HillCourt.png' alt="Avatar" width="245px" height="120px" style="margin-left: 5em;"></th>
+                <th style="text-indent: 9em;">&nbsp;</th>
+                <th>{% include 'navigation.html' %}</th>
+            </tr>                 
+        </table> 
+        <div class='row2'>
+            <div class='part'>
+                <p>WORLD-CLASS 3 & 4 BED RESIDENCES FROM RS. 2.42 CR.*</p>
+                <table>
+                    <tr>
+                        <th><h4>Bhivadi Harayna</h4></th>
+                        <th><a href="#"><h4 style="color:#FA6F5F">View Location</h4><a></th>
+                    </tr>
+                </table>
+                <button type="button" class="btn btn-primary btn-lg round" style="margin-left: 20px;width: 150px;opacity: 100%;"> Know More </button>
+                <h4>Developers</h4>
+                <div class='a'>
+                    <div style="font: Bold 20px/22px New York Medium;letter-spacing: 0px;color: #FF5567;text-transform: uppercase;opacity: 1;margin-left:1em;margin-top:0.3em">Accent</div>
+                    <div style='font: Medium 15px/26px Poppins;letter-spacing: 0px;color: #4A4A4A;opacity: 1;margin-left:1em;'>Buidtech Pvt Ltd.</div>
+                </div>
+                <h6>  HRERA 19 OF 2019. A PROJECT BY HERITAGE MAX REALTECH PVT. LTD.</h6>
+            </div>
+        </div>
+        
+    </body>
+</html>
